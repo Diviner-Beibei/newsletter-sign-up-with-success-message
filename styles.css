@@ -54,7 +54,7 @@ body{
 
 @media (min-width: 400px) {
   .main-container{
-    grid-template-columns:repeat(2, 1fr);   
+    grid-template-columns:minmax(34rem,1fr) 1fr;
   }
 
   .main-container__left,
@@ -87,14 +87,13 @@ body{
 }
 
 .main-container__left--title{
-  font-size: 4rem;
+  font-size: 9vh;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 870px) {
   .main-container__left--title{
     font-size: 5.5rem;
   }
-  
 }
 
 .main-container__left--description{
@@ -131,7 +130,7 @@ body{
 
 .error-hint{
   color: var(--color-primary-Tomato);
-  visibility: hidden;
+  display: none;
 }
 
 .main-container__right--img-container{
@@ -145,7 +144,6 @@ body{
 
 .main-container__right--mobile-img{
   display: block;
-  width: 100%;
 }
 
 @media (min-width: 400px) {

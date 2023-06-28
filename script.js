@@ -18,14 +18,14 @@ submit.addEventListener('click', function (e) {
     emailInput.style.border = '1px solid hsl(4, 100%, 67%)';
     emailInput.style.color = 'hsl(4, 100%, 67%)';
     emailInput.style.backgroundColor = 'hsl(4, 100%, 88%)';
-    hint.style.visibility = "visible";
+    hint.style.display = "inline-block";
     return;
   }
 
   mainContainer.style.display = 'none';
   successContainer.style.display = 'flex';
 
-  hint.style.visibility = "hidden";
+  hint.style.display = "none";
   emailInput.style = emailInput_defaultStyle;
   // location.reload();
   enteredEmail.textContent = emailInput.value;

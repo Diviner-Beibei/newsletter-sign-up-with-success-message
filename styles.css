@@ -87,7 +87,7 @@ body{
 }
 
 .main-container__left--title{
-  font-size: 9vh;
+  font-size: 4.2rem;
 }
 
 @media (min-width: 870px) {
